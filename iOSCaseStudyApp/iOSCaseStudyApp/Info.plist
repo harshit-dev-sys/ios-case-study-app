@@ -39,5 +39,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SpartanMB-Regular.ttf</string>
+		<string>SpartanMB-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>

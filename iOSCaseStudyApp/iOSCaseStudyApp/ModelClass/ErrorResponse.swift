@@ -2,8 +2,16 @@
 //  ErrorResponse.swift
 //  iOSCaseStudyApp
 //
-//  Created by MAC HD on 19/09/19.
-//  Copyright © 2019 MAC HD. All rights reserved.
-//
 
 import Foundation
+
+struct ErrorResponse: Codable {
+    let errorMessage: String
+    let error: String
+    
+    enum CodingKeys: String, CodingKey {
+        case errorMessage = "message"
+        case error = "error"
+    }
+}
+

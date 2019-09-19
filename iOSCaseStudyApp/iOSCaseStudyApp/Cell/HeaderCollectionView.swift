@@ -2,13 +2,10 @@
 //  HeaderCollectionReusableView.swift
 //  iOSCaseStudyApp
 //
-//  Created by MAC HD on 19/09/19.
-//  Copyright © 2019 MAC HD. All rights reserved.
-//
 
 import UIKit
 
-class HeaderCollectionReusableView: UICollectionReusableView {
+class HeaderCollectionView: UICollectionReusableView {
     
     @IBOutlet weak var headerImageView: UIImageView!
     @IBOutlet weak var headerLabel: UILabel!
@@ -18,4 +15,14 @@ class HeaderCollectionReusableView: UICollectionReusableView {
         // Initialization code
     }
     
+    func updateHeaderData(productData: ProductResponse?)  {
+        if let banner = productData?.banner {
+            if let url = URL(string: banner){
+                self.headerImageView.kf.setImage(with: url)
+            }
+        }
+        if let subheader =  productData?.subheader {
+            self.headerLabel.text = subheader
+        }
+    }
 }

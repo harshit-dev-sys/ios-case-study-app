@@ -1,14 +1,11 @@
 //
 //  DataModel.swift
 //  iOSCaseStudyApp
-//
-//  Created by MAC HD on 19/09/19.
-//  Copyright © 2019 MAC HD. All rights reserved.
-//
+
 
 import UIKit
 
-struct DataModel: Codable {
+struct ProductResponse: Codable {
     let variationName: String?
     let banner: String?
     let subheader: String?
@@ -65,5 +62,4 @@ struct DataModel: Codable {
             case crossedPrice = "crossed_price"
         }
     }
-
 }

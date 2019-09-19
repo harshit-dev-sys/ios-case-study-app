@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  iOSCaseStudyApp
 //
-//  Copyright © 2019 MAC HD. All rights reserved.
-//
 
 import UIKit
 
