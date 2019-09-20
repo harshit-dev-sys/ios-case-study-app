@@ -1,5 +1,5 @@
 //
-//  DataModel.swift
+//  ProductResponse.swift
 //  iOSCaseStudyApp
 
 

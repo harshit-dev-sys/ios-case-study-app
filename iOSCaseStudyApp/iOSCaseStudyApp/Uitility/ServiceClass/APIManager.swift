@@ -7,9 +7,10 @@ import Foundation
 
 class APIManager: NSObject {
     
-     func request(jsonFile: String, success: ((Data, Int) -> Void)? = nil, failure: ((ErrorResponse) -> Void)? = nil) {
+    func request(jsonFile: String, success: ((Data, Int) -> Void)? = nil, failure: ((ErrorResponse) -> Void)? = nil) {
+        
         guard let fileUrl = Bundle.main.url(forResource: jsonFile, withExtension: "json") else {
-            let error = ErrorResponse.init(errorMessage:"Error", error: "File could not be located at the given url")
+            let error = ErrorResponse.init(errorMessage: Constants.strings.Error, error: Constants.strings.APIFailedError)
             failure?(error)
             return
         }
@@ -19,9 +20,8 @@ class APIManager: NSObject {
             success?(data , (200))
             
         } catch {
-            // Print error if something went wrong
-            print("Error: \(error)")
-            let error = ErrorResponse.init(errorMessage:"Error", error: "Something went wrong")
+            // error if something went wrong
+            let error = ErrorResponse.init(errorMessage:Constants.strings.Error, error: Constants.strings.SomethingWentWrong)
             failure?(error)
         }
     }

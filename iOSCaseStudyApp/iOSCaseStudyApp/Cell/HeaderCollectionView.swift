@@ -1,5 +1,5 @@
 //
-//  HeaderCollectionReusableView.swift
+//  HeaderCollectionView.swift
 //  iOSCaseStudyApp
 //
 
@@ -15,7 +15,7 @@ class HeaderCollectionView: UICollectionReusableView {
         // Initialization code
     }
     
-    func updateHeaderData(productData: ProductResponse?)  {
+    func updateHeaderData(productData: ProductResponse?) {
         if let banner = productData?.banner {
             if let url = URL(string: banner){
                 self.headerImageView.kf.setImage(with: url)

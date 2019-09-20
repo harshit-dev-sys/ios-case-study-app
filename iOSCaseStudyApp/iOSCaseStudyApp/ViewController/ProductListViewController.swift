@@ -1,12 +1,12 @@
 //
-//  HomeViewController.swift
+//  ProductListViewController.swift
 //  iOSCaseStudyApp
 //
 
 import UIKit
 import Kingfisher
 
-class ProductViewController: UIViewController {
+class ProductListViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -17,12 +17,17 @@ class ProductViewController: UIViewController {
         self.cellRegistered()
         self.showProductListData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+       // self.collectionView.reloadData()
+    }
 }
 
-// MARK: - Custome Method extension
-extension ProductViewController {
+// MARK: - Custom Method extension
+extension ProductListViewController {
     
     func cellRegistered() {
+        
         collectionView.register(UINib(nibName: Constants.CellName.HEADER_COLLECTION_VIEW, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier:Constants.CellIdentifier.HEADER_COLLECTION_VIEW)
         
         collectionView.register(UINib.init(nibName: Constants.CellName.PRODUCT_CELL, bundle: nil), forCellWithReuseIdentifier: Constants.CellIdentifier.PRODUCT_CELL)
@@ -38,7 +43,7 @@ extension ProductViewController {
 }
 
 // MARK: - UICollectionViewDataSource protocol
-extension ProductViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension ProductListViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -76,13 +81,10 @@ extension ProductViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
-        
         if let controller = UIStoryboard.init(name:Constants.Storyboard.STORYBOARD_MAIN, bundle: Bundle.main).instantiateViewController(withIdentifier: Constants.ViewControlletIdentifier.PRODUCT_DETAIL_VIEWCONTROLLER) as? ProductDetailViewController {
             controller.slot = productData?.slots?[indexPath.row]
-        self.navigationController?.pushViewController(controller, animated: true)
-            
+            controller.product = productData
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     }
     

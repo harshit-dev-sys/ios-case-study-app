@@ -19,16 +19,14 @@
 		B703E56523335AB500AD1CC3 /* HeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703E56323335AB500AD1CC3 /* HeaderCollectionView.swift */; };
 		B703E56623335AB500AD1CC3 /* HeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B703E56423335AB500AD1CC3 /* HeaderCollectionView.xib */; };
 		B703E56823336A1C00AD1CC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703E56723336A1C00AD1CC3 /* Constants.swift */; };
-		B703E57023336E7A00AD1CC3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703E56F23336E7A00AD1CC3 /* Product.swift */; };
 		B703E5772333721F00AD1CC3 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703E5762333721F00AD1CC3 /* ServiceManager.swift */; };
 		B703E5792333739600AD1CC3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703E5782333739600AD1CC3 /* APIManager.swift */; };
-		B703E57B2333746700AD1CC3 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703E57A2333746700AD1CC3 /* ErrorResponse.swift */; };
 		B716349F2333BDBD005C0993 /* 9-product-grid.json in Resources */ = {isa = PBXBuildFile; fileRef = B716349E2333BDBD005C0993 /* 9-product-grid.json */; };
-		B71634A32333C304005C0993 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71634A22333C304005C0993 /* ProductViewController.swift */; };
-		B76A6ABE2334836E0019116E /* ProductDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76A6ABC2334836E0019116E /* ProductDetailCell.xib */; };
-		B76A6ABF2334836E0019116E /* ProductDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76A6ABD2334836E0019116E /* ProductDetailCell.swift */; };
-		B76BA5842333A9C00042C5F1 /* SpartanMB-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B76BA5822333A9C00042C5F1 /* SpartanMB-SemiBold.ttf */; };
-		B76BA5852333A9C00042C5F1 /* SpartanMB-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B76BA5832333A9C00042C5F1 /* SpartanMB-Regular.ttf */; };
+		B74298EF2334DE4500856B65 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74298EE2334DE4500856B65 /* ProductListViewController.swift */; };
+		B74298F32334E26700856B65 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74298F12334E26700856B65 /* Product.swift */; };
+		B74298F42334E26700856B65 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74298F22334E26700856B65 /* ErrorResponse.swift */; };
+		B74298F92334E88800856B65 /* SpartanMB-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74298F72334E88800856B65 /* SpartanMB-Regular.ttf */; };
+		B74298FA2334E88800856B65 /* SpartanMB-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74298F82334E88800856B65 /* SpartanMB-SemiBold.ttf */; };
 		B78984992334943800CD6292 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78984982334943800CD6292 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,16 +67,14 @@
 		B703E56323335AB500AD1CC3 /* HeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionView.swift; sourceTree = "<group>"; };
 		B703E56423335AB500AD1CC3 /* HeaderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionView.xib; sourceTree = "<group>"; };
 		B703E56723336A1C00AD1CC3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B703E56F23336E7A00AD1CC3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		B703E5762333721F00AD1CC3 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		B703E5782333739600AD1CC3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		B703E57A2333746700AD1CC3 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		B716349E2333BDBD005C0993 /* 9-product-grid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9-product-grid.json"; sourceTree = "<group>"; };
-		B71634A22333C304005C0993 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
-		B76A6ABC2334836E0019116E /* ProductDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailCell.xib; sourceTree = "<group>"; };
-		B76A6ABD2334836E0019116E /* ProductDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailCell.swift; sourceTree = "<group>"; };
-		B76BA5822333A9C00042C5F1 /* SpartanMB-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpartanMB-SemiBold.ttf"; sourceTree = "<group>"; };
-		B76BA5832333A9C00042C5F1 /* SpartanMB-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpartanMB-Regular.ttf"; sourceTree = "<group>"; };
+		B74298EE2334DE4500856B65 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		B74298F12334E26700856B65 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B74298F22334E26700856B65 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		B74298F72334E88800856B65 /* SpartanMB-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpartanMB-Regular.ttf"; sourceTree = "<group>"; };
+		B74298F82334E88800856B65 /* SpartanMB-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpartanMB-SemiBold.ttf"; sourceTree = "<group>"; };
 		B78984982334943800CD6292 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		C3A73176D69C3BC2DB8E1E87 /* Pods-iOSCaseStudyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCaseStudyApp.debug.xcconfig"; path = "Target Support Files/Pods-iOSCaseStudyApp/Pods-iOSCaseStudyApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,8 +147,8 @@
 		B703E5292333516100AD1CC3 /* iOSCaseStudyApp */ = {
 			isa = PBXGroup;
 			children = (
-				B703E575233371F700AD1CC3 /* ModelClass */,
-				B703E572233370A000AD1CC3 /* Fonts */,
+				B74298F52334E88800856B65 /* Resources */,
+				B74298F02334E26700856B65 /* ModalClass */,
 				B703E56B23336D3000AD1CC3 /* Uitility */,
 				B703E55C2333553800AD1CC3 /* Cell */,
 				B703E5582333517F00AD1CC3 /* ViewController */,
@@ -186,7 +182,7 @@
 		B703E5582333517F00AD1CC3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B71634A22333C304005C0993 /* ProductViewController.swift */,
+				B74298EE2334DE4500856B65 /* ProductListViewController.swift */,
 				B78984982334943800CD6292 /* ProductDetailViewController.swift */,
 			);
 			path = ViewController;
@@ -199,8 +195,6 @@
 				B703E55E2333555600AD1CC3 /* ProductCell.xib */,
 				B703E56323335AB500AD1CC3 /* HeaderCollectionView.swift */,
 				B703E56423335AB500AD1CC3 /* HeaderCollectionView.xib */,
-				B76A6ABD2334836E0019116E /* ProductDetailCell.swift */,
-				B76A6ABC2334836E0019116E /* ProductDetailCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -232,30 +226,38 @@
 			path = ServiceClass;
 			sourceTree = "<group>";
 		};
-		B703E572233370A000AD1CC3 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				B76BA5832333A9C00042C5F1 /* SpartanMB-Regular.ttf */,
-				B76BA5822333A9C00042C5F1 /* SpartanMB-SemiBold.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		B703E575233371F700AD1CC3 /* ModelClass */ = {
-			isa = PBXGroup;
-			children = (
-				B703E56F23336E7A00AD1CC3 /* Product.swift */,
-				B703E57A2333746700AD1CC3 /* ErrorResponse.swift */,
-			);
-			path = ModelClass;
-			sourceTree = "<group>";
-		};
 		B703E57C233376FB00AD1CC3 /* JsonFile */ = {
 			isa = PBXGroup;
 			children = (
 				B716349E2333BDBD005C0993 /* 9-product-grid.json */,
 			);
 			path = JsonFile;
+			sourceTree = "<group>";
+		};
+		B74298F02334E26700856B65 /* ModalClass */ = {
+			isa = PBXGroup;
+			children = (
+				B74298F12334E26700856B65 /* Product.swift */,
+				B74298F22334E26700856B65 /* ErrorResponse.swift */,
+			);
+			path = ModalClass;
+			sourceTree = "<group>";
+		};
+		B74298F52334E88800856B65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B74298F62334E88800856B65 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B74298F62334E88800856B65 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B74298F72334E88800856B65 /* SpartanMB-Regular.ttf */,
+				B74298F82334E88800856B65 /* SpartanMB-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,14 +366,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B76BA5852333A9C00042C5F1 /* SpartanMB-Regular.ttf in Resources */,
 				B703E5352333516400AD1CC3 /* LaunchScreen.storyboard in Resources */,
-				B76BA5842333A9C00042C5F1 /* SpartanMB-SemiBold.ttf in Resources */,
 				B703E56623335AB500AD1CC3 /* HeaderCollectionView.xib in Resources */,
+				B74298F92334E88800856B65 /* SpartanMB-Regular.ttf in Resources */,
 				B703E5602333555600AD1CC3 /* ProductCell.xib in Resources */,
-				B76A6ABE2334836E0019116E /* ProductDetailCell.xib in Resources */,
 				B716349F2333BDBD005C0993 /* 9-product-grid.json in Resources */,
 				B703E5322333516400AD1CC3 /* Assets.xcassets in Resources */,
+				B74298FA2334E88800856B65 /* SpartanMB-SemiBold.ttf in Resources */,
 				B703E5302333516100AD1CC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,15 +441,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B703E5792333739600AD1CC3 /* APIManager.swift in Sources */,
-				B703E57023336E7A00AD1CC3 /* Product.swift in Sources */,
-				B76A6ABF2334836E0019116E /* ProductDetailCell.swift in Sources */,
 				B703E56823336A1C00AD1CC3 /* Constants.swift in Sources */,
+				B74298F32334E26700856B65 /* Product.swift in Sources */,
 				B703E5772333721F00AD1CC3 /* ServiceManager.swift in Sources */,
 				B703E56523335AB500AD1CC3 /* HeaderCollectionView.swift in Sources */,
+				B74298F42334E26700856B65 /* ErrorResponse.swift in Sources */,
 				B703E55F2333555600AD1CC3 /* ProductCell.swift in Sources */,
 				B78984992334943800CD6292 /* ProductDetailViewController.swift in Sources */,
-				B71634A32333C304005C0993 /* ProductViewController.swift in Sources */,
-				B703E57B2333746700AD1CC3 /* ErrorResponse.swift in Sources */,
+				B74298EF2334DE4500856B65 /* ProductListViewController.swift in Sources */,
 				B703E52B2333516100AD1CC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

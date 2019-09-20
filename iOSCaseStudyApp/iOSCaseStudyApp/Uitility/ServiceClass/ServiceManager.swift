@@ -28,9 +28,9 @@ class ServiceManager {
     // MARK: - Error show
     class func handleError(json: Data) {
         if let error = try? JSONDecoder().decode(ErrorResponse.self, from: json) {
-            print("Error:", error.errorMessage)
+            print(Constants.strings.Error, error.errorMessage)
         } else {
-             print("Error:")
+             print(Constants.strings.Error)
         }
     }
     

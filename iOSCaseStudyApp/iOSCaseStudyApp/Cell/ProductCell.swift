@@ -25,9 +25,9 @@ class ProductCell: UICollectionViewCell {
         productBackgroundView.layer.shadowOffset = CGSize(width: 0, height: 1)
     }
     
-    override var isSelected: Bool {
+    override var isHighlighted: Bool {
         didSet {
-            if isSelected {
+            if isHighlighted {
                 productBackgroundView.layer.borderWidth = 2
                 productBackgroundView.layer.borderColor = #colorLiteral(red: 0.8078431373, green: 0.05882352941, blue: 0.05490196078, alpha: 1)
                 self.productLabel.textColor = #colorLiteral(red: 0.8078431373, green: 0.05882352941, blue: 0.05490196078, alpha: 1)
@@ -42,7 +42,7 @@ class ProductCell: UICollectionViewCell {
     func updateCellData(slot: ProductResponse.Slot?)  {
         self.productLabel.text = slot?.brand?.uppercased()
         self.productImageView.kf.indicatorType = .activity
-        if let url = URL(string: slot?.imageURL ?? ""){
+        if let url = URL(string: slot?.imageURL ?? "") {
             self.productImageView.kf.setImage(with: url)
         }
     }
