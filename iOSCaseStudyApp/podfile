@@ -7,5 +7,7 @@ target 'iOSCaseStudyApp' do
 
   # Pods for iOSCaseStudyApp
     pod 'Kingfisher'
+    pod 'HCSStarRatingView', '~> 1.5'
 
 end
+
