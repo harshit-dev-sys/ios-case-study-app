@@ -35,7 +35,6 @@ extension ProductViewController {
         }) { (error) in
         }
     }
-    
 }
 
 // MARK: - UICollectionViewDataSource protocol
@@ -69,7 +68,7 @@ extension ProductViewController: UICollectionViewDataSource, UICollectionViewDel
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellIdentifier.PRODUCT_CELL, for: indexPath as IndexPath) as? ProductCell {
             let slot = self.productData?.slots?[indexPath.row]
-            cell.updateCellData(productData: slot)
+            cell.updateCellData(slot: slot)
             return cell
         } else {
             return UICollectionViewCell()
@@ -78,6 +77,13 @@ extension ProductViewController: UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
+        
+        if let controller = UIStoryboard.init(name:Constants.Storyboard.STORYBOARD_MAIN, bundle: Bundle.main).instantiateViewController(withIdentifier: Constants.ViewControlletIdentifier.PRODUCT_DETAIL_VIEWCONTROLLER) as? ProductDetailViewController {
+            controller.slot = productData?.slots?[indexPath.row]
+        self.navigationController?.pushViewController(controller, animated: true)
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -72,7 +72,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="136" height="171"/>
             <connections>
-                <outlet property="productBackground" destination="kMy-6k-QT9" id="Vyz-2U-83f"/>
+                <outlet property="productBackgroundView" destination="kMy-6k-QT9" id="koN-mN-hYz"/>
                 <outlet property="productImageView" destination="3dq-Gf-4oJ" id="1aD-N3-Ls3"/>
                 <outlet property="productLabel" destination="4do-9F-eeO" id="sBH-Z2-jTy"/>
             </connections>

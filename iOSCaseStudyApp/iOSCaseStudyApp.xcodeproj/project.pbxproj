@@ -25,8 +25,11 @@
 		B703E57B2333746700AD1CC3 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703E57A2333746700AD1CC3 /* ErrorResponse.swift */; };
 		B716349F2333BDBD005C0993 /* 9-product-grid.json in Resources */ = {isa = PBXBuildFile; fileRef = B716349E2333BDBD005C0993 /* 9-product-grid.json */; };
 		B71634A32333C304005C0993 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71634A22333C304005C0993 /* ProductViewController.swift */; };
+		B76A6ABE2334836E0019116E /* ProductDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76A6ABC2334836E0019116E /* ProductDetailCell.xib */; };
+		B76A6ABF2334836E0019116E /* ProductDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76A6ABD2334836E0019116E /* ProductDetailCell.swift */; };
 		B76BA5842333A9C00042C5F1 /* SpartanMB-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B76BA5822333A9C00042C5F1 /* SpartanMB-SemiBold.ttf */; };
 		B76BA5852333A9C00042C5F1 /* SpartanMB-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B76BA5832333A9C00042C5F1 /* SpartanMB-Regular.ttf */; };
+		B78984992334943800CD6292 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78984982334943800CD6292 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +75,11 @@
 		B703E57A2333746700AD1CC3 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		B716349E2333BDBD005C0993 /* 9-product-grid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9-product-grid.json"; sourceTree = "<group>"; };
 		B71634A22333C304005C0993 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		B76A6ABC2334836E0019116E /* ProductDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailCell.xib; sourceTree = "<group>"; };
+		B76A6ABD2334836E0019116E /* ProductDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailCell.swift; sourceTree = "<group>"; };
 		B76BA5822333A9C00042C5F1 /* SpartanMB-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpartanMB-SemiBold.ttf"; sourceTree = "<group>"; };
 		B76BA5832333A9C00042C5F1 /* SpartanMB-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpartanMB-Regular.ttf"; sourceTree = "<group>"; };
+		B78984982334943800CD6292 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		C3A73176D69C3BC2DB8E1E87 /* Pods-iOSCaseStudyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCaseStudyApp.debug.xcconfig"; path = "Target Support Files/Pods-iOSCaseStudyApp/Pods-iOSCaseStudyApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				B71634A22333C304005C0993 /* ProductViewController.swift */,
+				B78984982334943800CD6292 /* ProductDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -192,6 +199,8 @@
 				B703E55E2333555600AD1CC3 /* ProductCell.xib */,
 				B703E56323335AB500AD1CC3 /* HeaderCollectionView.swift */,
 				B703E56423335AB500AD1CC3 /* HeaderCollectionView.xib */,
+				B76A6ABD2334836E0019116E /* ProductDetailCell.swift */,
+				B76A6ABC2334836E0019116E /* ProductDetailCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -360,6 +369,7 @@
 				B76BA5842333A9C00042C5F1 /* SpartanMB-SemiBold.ttf in Resources */,
 				B703E56623335AB500AD1CC3 /* HeaderCollectionView.xib in Resources */,
 				B703E5602333555600AD1CC3 /* ProductCell.xib in Resources */,
+				B76A6ABE2334836E0019116E /* ProductDetailCell.xib in Resources */,
 				B716349F2333BDBD005C0993 /* 9-product-grid.json in Resources */,
 				B703E5322333516400AD1CC3 /* Assets.xcassets in Resources */,
 				B703E5302333516100AD1CC3 /* Main.storyboard in Resources */,
@@ -431,10 +441,12 @@
 			files = (
 				B703E5792333739600AD1CC3 /* APIManager.swift in Sources */,
 				B703E57023336E7A00AD1CC3 /* Product.swift in Sources */,
+				B76A6ABF2334836E0019116E /* ProductDetailCell.swift in Sources */,
 				B703E56823336A1C00AD1CC3 /* Constants.swift in Sources */,
 				B703E5772333721F00AD1CC3 /* ServiceManager.swift in Sources */,
 				B703E56523335AB500AD1CC3 /* HeaderCollectionView.swift in Sources */,
 				B703E55F2333555600AD1CC3 /* ProductCell.swift in Sources */,
+				B78984992334943800CD6292 /* ProductDetailViewController.swift in Sources */,
 				B71634A32333C304005C0993 /* ProductViewController.swift in Sources */,
 				B703E57B2333746700AD1CC3 /* ErrorResponse.swift in Sources */,
 				B703E52B2333516100AD1CC3 /* AppDelegate.swift in Sources */,

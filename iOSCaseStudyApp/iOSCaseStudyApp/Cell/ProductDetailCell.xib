@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SpartanMB-Regular.ttf">
+            <string>SpartanMB-Regular</string>
+        </array>
+        <array key="SpartanMB-SemiBold.ttf">
+            <string>SpartanMB-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PIWProductItemCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductDetailCell" rowHeight="243" id="7gV-qz-FMp" customClass="ProductDetailCell" customModule="iOSCaseStudyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="230"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7gV-qz-FMp" id="lTe-LM-GKw">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="229.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8x2-nb-kMc">
+                        <rect key="frame" x="0.0" y="0.0" width="384" height="229.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l2Z-3g-BHp">
+                                <rect key="frame" x="8" y="8" width="173" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="7tD-7p-NRq"/>
+                                    <constraint firstAttribute="width" secondItem="l2Z-3g-BHp" secondAttribute="height" multiplier="1:0.8" id="dva-jk-Lyo"/>
+                                    <constraint firstAttribute="height" constant="100" id="nz9-gA-2KV"/>
+                                    <constraint firstAttribute="width" secondItem="l2Z-3g-BHp" secondAttribute="height" multiplier="1:1" id="oum-LN-6fI"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7tD-7p-NRq"/>
+                                        <exclude reference="nz9-gA-2KV"/>
+                                        <exclude reference="oum-LN-6fI"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND NAME" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQX-nr-j9A">
+                                <rect key="frame" x="197" y="25" width="179" height="19"/>
+                                <fontDescription key="fontDescription" name="SpartanMB-SemiBold" family="Spartan MB" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBy-am-82I">
+                                <rect key="frame" x="197" y="47" width="179" height="17.5"/>
+                                <fontDescription key="fontDescription" name="SpartanMB-Regular" family="Spartan MB" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A$200.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZT5-mf-yek">
+                                <rect key="frame" x="197" y="67.5" width="179" height="19"/>
+                                <fontDescription key="fontDescription" name="SpartanMB-SemiBold" family="Spartan MB" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars_5.0" translatesAutoresizingMaskIntoConstraints="NO" id="Sx7-2n-RR8">
+                                <rect key="frame" x="197" y="89.5" width="100" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="K6F-ql-Ede"/>
+                                    <constraint firstAttribute="width" constant="100" id="dXR-i0-9V0"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fF0-Zg-wtL">
+                                <rect key="frame" x="33.5" y="186.5" width="317" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pz6-sq-Oej">
+                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SpartanMB-SemiBold" family="Spartan MB" pointSize="13"/>
+                                        <state key="normal" title="BACK">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9H-Zo-drE">
+                                        <rect key="frame" x="163.5" y="0.0" width="153.5" height="38"/>
+                                        <color key="backgroundColor" red="0.80784313725490198" green="0.058823529411764705" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="JKX-gm-kxu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SpartanMB-SemiBold" family="Spartan MB" pointSize="13"/>
+                                        <state key="normal" title="ADD TO BAG">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionBackButton:" destination="7gV-qz-FMp" eventType="touchUpInside" id="BSg-lw-Jzo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="sH1-wb-NYR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fF0-Zg-wtL" secondAttribute="bottom" constant="5" id="40E-ie-Whr"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="210" id="4Sy-t3-cwh"/>
+                            <constraint firstItem="kQX-nr-j9A" firstAttribute="top" secondItem="8x2-nb-kMc" secondAttribute="top" constant="25" id="6ZL-yf-age"/>
+                            <constraint firstItem="fF0-Zg-wtL" firstAttribute="centerX" secondItem="8x2-nb-kMc" secondAttribute="centerX" id="7FZ-qV-dfN"/>
+                            <constraint firstAttribute="trailing" secondItem="ZT5-mf-yek" secondAttribute="trailing" constant="8" id="8SF-R1-Ypq"/>
+                            <constraint firstItem="Sx7-2n-RR8" firstAttribute="top" secondItem="ZT5-mf-yek" secondAttribute="bottom" constant="3" id="Bnh-fO-vST"/>
+                            <constraint firstItem="l2Z-3g-BHp" firstAttribute="width" secondItem="8x2-nb-kMc" secondAttribute="width" multiplier="0.45" id="Ei3-DR-DFe"/>
+                            <constraint firstAttribute="trailing" secondItem="IBy-am-82I" secondAttribute="trailing" constant="8" id="HCY-l3-u9a"/>
+                            <constraint firstAttribute="trailing" secondItem="kQX-nr-j9A" secondAttribute="trailing" constant="8" id="IV6-Pr-Tnp"/>
+                            <constraint firstItem="L9H-Zo-drE" firstAttribute="width" secondItem="8x2-nb-kMc" secondAttribute="width" multiplier="0.4" id="JbY-8a-mi2"/>
+                            <constraint firstItem="ZT5-mf-yek" firstAttribute="top" secondItem="IBy-am-82I" secondAttribute="bottom" priority="250" constant="8" id="Kcw-lf-Nc9"/>
+                            <constraint firstItem="IBy-am-82I" firstAttribute="top" secondItem="kQX-nr-j9A" secondAttribute="bottom" constant="3" id="RPU-cI-O5w"/>
+                            <constraint firstItem="ZT5-mf-yek" firstAttribute="leading" secondItem="IBy-am-82I" secondAttribute="leading" id="UGb-he-3nZ"/>
+                            <constraint firstItem="kQX-nr-j9A" firstAttribute="leading" secondItem="l2Z-3g-BHp" secondAttribute="trailing" constant="16" id="Z6t-gJ-3Sw"/>
+                            <constraint firstItem="ZT5-mf-yek" firstAttribute="top" secondItem="IBy-am-82I" secondAttribute="bottom" constant="3" id="Z9D-F6-gUu"/>
+                            <constraint firstItem="l2Z-3g-BHp" firstAttribute="top" secondItem="8x2-nb-kMc" secondAttribute="top" constant="8" id="fFR-cu-KYp"/>
+                            <constraint firstItem="l2Z-3g-BHp" firstAttribute="leading" secondItem="8x2-nb-kMc" secondAttribute="leading" constant="8" id="fux-QS-IKQ"/>
+                            <constraint firstItem="IBy-am-82I" firstAttribute="leading" secondItem="kQX-nr-j9A" secondAttribute="leading" id="h9N-6L-68f"/>
+                            <constraint firstItem="Sx7-2n-RR8" firstAttribute="leading" secondItem="ZT5-mf-yek" secondAttribute="leading" id="l6Y-jF-bTv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kcw-lf-Nc9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8x2-nb-kMc" secondAttribute="bottom" id="EaM-OO-6Cc"/>
+                    <constraint firstAttribute="trailing" secondItem="8x2-nb-kMc" secondAttribute="trailing" id="Mvs-04-ovI"/>
+                    <constraint firstItem="8x2-nb-kMc" firstAttribute="top" secondItem="lTe-LM-GKw" secondAttribute="top" id="eSc-ks-7dd"/>
+                    <constraint firstItem="8x2-nb-kMc" firstAttribute="leading" secondItem="lTe-LM-GKw" secondAttribute="leading" id="oB2-d9-GSg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addToBagButton" destination="L9H-Zo-drE" id="3ry-hn-L9x"/>
+                <outlet property="backButton" destination="Pz6-sq-Oej" id="UOD-HS-JRw"/>
+                <outlet property="brandNameLabel" destination="kQX-nr-j9A" id="sCK-Z2-i0I"/>
+                <outlet property="priceLabel" destination="ZT5-mf-yek" id="9x4-ej-x3m"/>
+                <outlet property="productImageView" destination="l2Z-3g-BHp" id="5Zq-6r-G2P"/>
+                <outlet property="productNameLabel" destination="IBy-am-82I" id="If2-kQ-hxc"/>
+                <outlet property="ratingImageView" destination="Sx7-2n-RR8" id="AeP-NQ-D2d"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="337.78110944527737"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Stars_5.0" width="124" height="19"/>
+    </resources>
+</document>

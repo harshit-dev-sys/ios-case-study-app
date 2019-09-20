@@ -15,10 +15,6 @@ struct Constants {
     struct Storyboard {
         
         static let STORYBOARD_MAIN = "Main"
-        
-        static func getControllerInstance(identifier: String, storyBoard: String) -> UIViewController {
-            return UIStoryboard(name: storyBoard, bundle: nil).instantiateViewController(withIdentifier: identifier)
-        }
     }
     
     // MARK: - Cell Identifiers
@@ -27,12 +23,23 @@ struct Constants {
         
         static let PRODUCT_CELL = "ProductCell"
         static let HEADER_COLLECTION_VIEW = "HeaderCollectionView"
+        static let PRODUCT_DETAIL_CELL = "ProductDetailCell"
     }
     
+    // MARK: - Cell NAME
+
     struct CellName {
         
         static let PRODUCT_CELL = "ProductCell"
         static let HEADER_COLLECTION_VIEW = "HeaderCollectionView"
+        static let PRODUCT_DETAIL_CELL = "ProductDetailCell"
+    }
+    
+    //MARK: - ViewControllet Identifiers
+    struct ViewControlletIdentifier {
+        
+        static let PRODUCT_VIEWCONTROLLER = "ProductViewController"
+        static let PRODUCT_DETAIL_VIEWCONTROLLER = "ProductDetailViewController"
     }
     
 }

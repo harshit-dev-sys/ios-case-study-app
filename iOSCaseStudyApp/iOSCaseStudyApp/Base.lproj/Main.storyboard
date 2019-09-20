@@ -82,5 +82,52 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
         </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="1rB-3L-w5J">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailViewController" id="ucl-D3-OF0" customClass="ProductDetailViewController" customModule="iOSCaseStudyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3mo-ok-mXs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Th-8f-Ezi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="200" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OEX-7Z-mIk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ucl-D3-OF0" id="6ze-Zd-E0L"/>
+                                            <outlet property="delegate" destination="ucl-D3-OF0" id="mGf-OS-75T"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OEX-7Z-mIk" secondAttribute="bottom" id="2fH-DY-6hr"/>
+                                    <constraint firstItem="OEX-7Z-mIk" firstAttribute="leading" secondItem="3Th-8f-Ezi" secondAttribute="leading" id="6cK-lm-rBj"/>
+                                    <constraint firstItem="OEX-7Z-mIk" firstAttribute="top" secondItem="3Th-8f-Ezi" secondAttribute="top" id="K3q-9W-JBN"/>
+                                    <constraint firstAttribute="trailing" secondItem="OEX-7Z-mIk" secondAttribute="trailing" id="tkT-es-M4v"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Th-8f-Ezi" firstAttribute="top" secondItem="3eC-Kw-ccW" secondAttribute="top" id="47K-Rn-CZe"/>
+                            <constraint firstItem="3eC-Kw-ccW" firstAttribute="trailing" secondItem="3Th-8f-Ezi" secondAttribute="trailing" id="9Sh-h9-h0a"/>
+                            <constraint firstItem="3eC-Kw-ccW" firstAttribute="bottom" secondItem="3Th-8f-Ezi" secondAttribute="bottom" id="Bpv-Ap-NYo"/>
+                            <constraint firstItem="3Th-8f-Ezi" firstAttribute="leading" secondItem="3eC-Kw-ccW" secondAttribute="leading" id="tx2-o4-ORN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3eC-Kw-ccW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ERb-I1-Z2g"/>
+                    <connections>
+                        <outlet property="tableView" destination="OEX-7Z-mIk" id="WlZ-dq-9LF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0l-cf-dgu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755" y="123"/>
+        </scene>
     </scenes>
 </document>
